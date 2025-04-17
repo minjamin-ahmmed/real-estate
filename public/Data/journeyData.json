@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "../../src/assets/journey-1.jpg",
+    "heading": "Comprehensive Building Maintenance",
+    "subheading": "Beyond construction, we manage what we build.",
+    "details": "After completing construction, Bay manages all aspects of building operations for the next 10 years. Our dedicated Facilities Management team comprises industry professionals ensuring comfort, safety, and functionality at every level.",
+    "tag": "management"
+  },
+  {
+    "id": 2,
+    "image": "../../src/assets/journey-2.jpg",
+    "heading": "29 Years of Building Trust",
+    "subheading": "A legacy built on a promise of quality.",
+    "details": "Bay was founded with a simple commitment to quality. Decades later, that promise remains at the heart of everything we do. Our portfolio reflects the values of dedication, craftsmanship, and unwavering excellence.",
+    "tag": "milestone"
+  },
+  {
+    "id": 3,
+    "image": "../../src/assets/journey-3.jpg",
+    "heading": "Nex Research & Testing Laboratory",
+    "subheading": "Ensuring quality through innovation.",
+    "details": "Our in-house Bay Research & Testing Laboratory (BRTL) reflects our commitment to quality control. BRTL performs rigorous tests on building materials—including concrete crushing, rebar strength analysis.",
+    "tag": "quality"
+  },
+  {
+    "id": 4,
+    "image": "../../src/assets/journey-4.jpg",
+    "heading": "Total Quality Management",
+    "subheading": "Precision at every phase of construction.",
+    "details": "From groundbreaking to post-handover, we apply Total Quality Management (TQM) principles across every project. Over the past two decades, our proactive monitoring and attention to detail have defined the Bay standard.",
+    "tag": "quality"
+  },
+  {
+    "id": 5,
+    "image": "../../src/assets/journey-5.jpg",
+    "heading": "Design Excellence",
+    "subheading": "Where modern living meets timeless design.",
+    "details": "Bay’s buildings are known for avant-garde architecture with sleek lines and a minimalist aesthetic. Each apartment blends modern features with curated design details to create spaces that feel as good as they look.",
+    "tag": "design"
+  },
+  {
+    "id": 6,
+    "image": "../../src/assets/journey-6.jpg",
+    "heading": "Leading Real Estate Development",
+    "subheading": "Shaping skylines across the city.",
+    "details": "Bay has earned its reputation as a trusted name in real estate by consistently delivering exceptional commercial and residential developments. Our commitment to innovation, sustainability, and community drives every project.",
+    "tag": "development"
+  }
+]

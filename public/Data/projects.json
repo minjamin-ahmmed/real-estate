@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "img": "/src/assets/featured-1.jpg",
+    "holding_name": "Lake Vista Residency",
+    "location": "Banani, Dhaka",
+    "position": "Beside Lake",
+    "sqft": "2,450",
+    "description": "Modern lake-facing apartments offering peaceful views and luxury living in Banani.",
+    "details_description": "Lake Vista Residency offers a premium lakeside lifestyle in the heart of Banani. These homes are designed with large balconies, natural ventilation, and expansive windows that frame the lake view beautifully. Residents enjoy serenity while being minutes away from top restaurants, schools, and shopping malls."
+  },
+  {
+    "id": 2,
+    "img": "/src/assets/featured-2.jpg",
+    "holding_name": "Green Oasis Heights",
+    "location": "Gulshan 2, Dhaka",
+    "position": "Adjacent to Park and Lake",
+    "sqft": "3,100",
+    "description": "A premium high-rise with panoramic park and lake views in the heart of Gulshan.",
+    "details_description": "Green Oasis Heights combines nature and modern design in one of Dhaka’s most prestigious neighborhoods. With lush green surroundings, state-of-the-art fitness facilities, and rooftop lounges, it's the perfect home for those who seek peace and prestige in urban living."
+  },
+  {
+    "id": 3,
+    "img": "/src/assets/featured-3.jpg",
+    "holding_name": "Sunset Tower",
+    "location": "Baridhara DOHS, Dhaka",
+    "position": "Corner Plot with Lake View",
+    "sqft": "2,800",
+    "description": "Elegant corner tower with open surroundings, designed for luxury and comfort.",
+    "details_description": "Sunset Tower is strategically positioned to capture mesmerizing sunsets and natural breezes. With an emphasis on space and privacy, the corner plot offers a calm escape from the busy city while providing luxury interiors and community facilities."
+  },
+  {
+    "id": 4,
+    "img": "/src/assets/featured-4.jpg",
+    "holding_name": "Riverstone Residence",
+    "location": "Bashundhara R/A, Dhaka",
+    "position": "Facing River",
+    "sqft": "2,200",
+    "description": "Peaceful riverside residence combining modern architecture with nature’s calm.",
+    "details_description": "Riverstone Residence is ideal for those who crave a scenic and quiet environment. Its riverside balconies and eco-friendly architecture provide a peaceful retreat with close access to schools, hospitals, and corporate offices."
+  },
+  {
+    "id": 5,
+    "img": "/src/assets/featured-5.jpg",
+    "holding_name": "Urban Nest",
+    "location": "Dhanmondi, Dhaka",
+    "position": "Lake-adjacent",
+    "sqft": "2,650",
+    "description": "Chic city-living beside Dhanmondi Lake with spacious interiors and great connectivity.",
+    "details_description": "Urban Nest stands out with its sleek contemporary design, direct lake access, and smart-home features. Perfect for professionals and families who want nature and nightlife in one location, this residence is steps away from cafes, schools, and cultural hubs."
+  },
+  {
+    "id": 6,
+    "img": "/src/assets/featured-6.jpg",
+    "holding_name": "SkyGarden Apartments",
+    "location": "Uttara Sector 11, Dhaka",
+    "position": "Park View",
+    "sqft": "2,300",
+    "description": "Stylish apartments offering park-side serenity with rooftop garden access.",
+    "details_description": "SkyGarden Apartments bring nature to your doorstep. Enjoy community spaces like a rooftop garden, a yoga deck, and a play zone for kids — all overlooking the scenic Sector 11 park. An ideal balance of comfort, aesthetics, and connectivity."
+  },
+  {
+    "id": 7,
+    "img": "/src/assets/featured-7.jpg",
+    "holding_name": "The Terrace",
+    "location": "Mohakhali DOHS, Dhaka",
+    "position": "Overlooking Green Zone",
+    "sqft": "2,900",
+    "description": "Spacious homes with wide terraces and stunning green views in a secure community.",
+    "details_description": "The Terrace is designed for families seeking space, safety, and greenery. Located in a well-secured DOHS area, the building features open terraces, multipurpose lounges, and smart access controls to elevate everyday living."
+  },
+  {
+    "id": 8,
+    "img": "/src/assets/featured-8.jpg",
+    "holding_name": "Elm Residence",
+    "location": "Niketan, Dhaka",
+    "position": "Near Gulshan Lake",
+    "sqft": "2,500",
+    "description": "Elegant modern design close to Gulshan Lake, ideal for calm and classy living.",
+    "details_description": "Elm Residence reflects sophistication with its minimalist architecture and lake-side calm. Located in the serene yet accessible area of Niketan, it offers the best of both quiet residential life and close proximity to upscale Gulshan amenities."
+  },
+  {
+    "id": 9,
+    "img": "/src/assets/featured-9.jpeg",
+    "holding_name": "Palm View Heights",
+    "location": "Mirpur DOHS, Dhaka",
+    "position": "Beside Community Park",
+    "sqft": "2,150",
+    "description": "Affordable upscale homes near community parks with family-friendly amenities.",
+    "details_description": "Palm View Heights brings affordability and class together. With a focus on family living, it includes a private playground, walking track, and close access to essential services, all nestled beside a community park for weekend relaxation."
+  },
+  {
+    "id": 10,
+    "img": "/src/assets/featured-10.jpg",
+    "holding_name": "Zen Garden Living",
+    "location": "Shyamoli, Dhaka",
+    "position": "Backside Lake View",
+    "sqft": "2,400",
+    "description": "Tranquil homes with calming lake views, perfect for peaceful daily living.",
+    "details_description": "Zen Garden Living is designed to reduce stress and increase harmony. From Japanese-inspired interiors to calming lake views, it's the perfect blend of cultural aesthetic and peaceful design for anyone seeking mindful living."
+  },
+  {
+    "id": 11,
+    "img": "/src/assets/featured-4.jpg",
+    "holding_name": "Riverstone Residence",
+    "location": "Bashundhara R/A, Dhaka",
+    "position": "Facing River",
+    "sqft": "2,200",
+    "description": "Peaceful riverside residence combining modern architecture with nature’s calm.",
+    "details_description": "A second unit in Riverstone Residence offers the same tranquil riverside views and a community-oriented design with extra privacy, featuring corner units with panoramic water-facing balconies."
+  },
+  {
+    "id": 12,
+    "img": "/src/assets/featured-5.jpg",
+    "holding_name": "Urban Nest",
+    "location": "Dhanmondi, Dhaka",
+    "position": "Lake-adjacent",
+    "sqft": "2,650",
+    "description": "Chic city-living beside Dhanmondi Lake with spacious interiors and great connectivity.",
+    "details_description": "Another elegant layout of Urban Nest, this version includes an extended living area, improved lighting system, and lake-facing master suite, perfect for modern families wanting a refined Dhanmondi address."
+  }
+]
