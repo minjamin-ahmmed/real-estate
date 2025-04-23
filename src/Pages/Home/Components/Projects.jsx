@@ -28,7 +28,7 @@ const Projects = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute z-10 -left-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="hidden lg:block absolute z-10 -left-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
         onClick={onClick}
       >
         <FaArrowLeft size={20} />
@@ -40,7 +40,7 @@ const Projects = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute -right-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="hidden lg:block absolute -right-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
         onClick={onClick}
       >
         <FaArrowRight size={20} />
@@ -90,47 +90,53 @@ const Projects = () => {
       </div>
 
       <Slider {...settings}>
-        {sections.map((project, index) => (
-          <Link to={`/projects/${project.id}`} key={index}>
-            <div className="px-4">
-              <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
-                <div className="relative">
-                  <img
-                    src={project.img}
-                    alt={project.holding_name}
-                    className="w-full h-64 object-cover"
-                  />
-                  <span className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-red-400 text-white px-3 py-1 text-sm rounded-full shadow">
-                    {project.position}
-                  </span>
-                </div>
+        {sections.length === 0 ? (
+          <div className="text-center text-gray-500 col-span-full">
+            No projects works available.
+          </div>
+        ) : (
+          sections.map((project, index) => (
+            <Link to={`/projects/${project.id}`} key={index}>
+              <div className="px-4">
+                <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:scale-105 transition-transform duration-300 ease-in-out">
+                  <div className="relative">
+                    <img
+                      src={project.img}
+                      alt={project.holding_name}
+                      className="w-full h-64 object-cover"
+                    />
+                    <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 text-sm rounded-full shadow">
+                      {project.position}
+                    </span>
+                  </div>
 
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-zinc-700 mb-4">
-                    {project.holding_name}
-                  </h3>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold text-zinc-700 mb-4">
+                      {project.holding_name}
+                    </h3>
 
-                  <p className="text-zinc-600 mb-4">{project.description}</p>
+                    <p className="text-zinc-600 mb-4">{project.description}</p>
 
-                  <p className="flex items-center gap-2 text-zinc-500 mt-2 text-sm">
-                    <FaMapMarkerAlt className="text-red-500" />
-                    <span>{project.location}</span>
-                  </p>
+                    <p className="flex items-center gap-2 text-zinc-500 mt-2 text-sm">
+                      <FaMapMarkerAlt className="text-red-500" />
+                      <span>{project.location}</span>
+                    </p>
 
-                  <p className="flex items-center gap-2 text-zinc-500 mt-2 text-sm">
-                    <FaWater className="text-blue-500" />
-                    <span>{project.position}</span>
-                  </p>
+                    <p className="flex items-center gap-2 text-zinc-500 mt-2 text-sm">
+                      <FaWater className="text-blue-500" />
+                      <span>{project.position}</span>
+                    </p>
 
-                  <p className="flex items-center gap-2 text-zinc-500 mt-2 text-sm">
-                    <FaRulerCombined className="text-green-500" />
-                    <span>{project.sqft} sqft</span>
-                  </p>
+                    <p className="flex items-center gap-2 text-zinc-500 mt-2 text-sm">
+                      <FaRulerCombined className="text-green-500" />
+                      <span>{project.sqft} sqft</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))
+        )}
       </Slider>
     </div>
   );

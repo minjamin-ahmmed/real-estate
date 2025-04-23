@@ -16,15 +16,15 @@ const navItems = [
   {
     name: "Projects",
     path: "/projects",
-    dropdown: [
-      { name: "Commercial", path: "/projects/commercial" },
-      { name: "Residential", path: "/projects/residential" },
-      { name: "Retail", path: "/projects/retail" },
-    ],
+    // dropdown: [
+    //   { name: "Commercial", path: "/projects/commercial" },
+    //   { name: "Residential", path: "/projects/residential" },
+    //   { name: "Retail", path: "/projects/retail" },
+    // ],
   },
   { name: "Contact", path: "/contact" },
-  { name: "Career", path: "/career" },
-  { name: "Connect", path: "/connect" },
+  // { name: "Career", path: "/career" },
+  // { name: "Connect", path: "/connect" },
 ];
 
 const Navbar = () => {
@@ -76,14 +76,21 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`px-3 py-2 text-lg font-semibold transition ${
-                    location.pathname === item.path
-                      ? "border-b-2 border-red-500 text-red-500"
-                      : "text-zinc-600"
-                  }`}
+                  className={`relative px-3 py-2 text-lg font-semibold transition-colors duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
+    ${
+      location.pathname === item.path
+        ? "text-red-500"
+        : "text-zinc-600 hover:text-red-500"
+    }
+    after:content-[''] after:absolute after:bottom-0 after:w-0 after:left-1/2 after:h-[2px] after:bg-red-500
+    after:transition-all after:duration-500 after:ease-[cubic-bezier(0.4,0,0.2,1)]
+    hover:after:w-full hover:after:left-0
+    ${location.pathname === item.path ? "after:w-full after:left-[7px]" : ""}
+  `}
                 >
                   {item.name}
                 </Link>
+
                 {item.dropdown &&
                   dropdownOpen === item.name &&
                   renderDropdown(item.dropdown)}

@@ -56,7 +56,11 @@ const Contact = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <img className="w-full object-cover" src={nex_building} alt="" />
+            <img
+              className="w-full object-cover rounded-2xl"
+              src={nex_building}
+              alt=""
+            />
           </div>
         </div>
       </div>

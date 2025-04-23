@@ -10,7 +10,7 @@ const ProjectDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("/public/Data/projects.json");
+        const res = await axios.get("/Data/projects.json");
         const allProjects = res.data;
         const foundProjects = allProjects.find(
           (item) => String(item.id) === id
@@ -43,6 +43,7 @@ const ProjectDetails = () => {
               <h1 className="text-4xl font-bold mt-6 text-zinc-700">
                 {data.holding_name}
               </h1>
+
               <p className="text-lg text-zinc-500 mt-2">{data.location}</p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
@@ -71,7 +72,7 @@ const ProjectDetails = () => {
           </div>
         </>
       ) : (
-        <p className="text-center text-zinc-500 text-lg">Loading...</p>
+        <p className="text-center text-zinc-500 text-lg">No Details to show</p>
       )}
     </div>
   );

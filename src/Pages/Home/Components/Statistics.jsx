@@ -1,5 +1,5 @@
 import React from "react";
-import buildingImg from "../../../assets/building-bg-remove.png";
+import buildingImg from "../../../assets/featured-9.jpeg";
 
 const Statistics = () => {
   return (
@@ -50,7 +50,7 @@ const Statistics = () => {
         <div className="lg:col-span-1">
           <div>
             <img
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[600px] object-cover rounded-xl"
               src={buildingImg}
               alt=""
             />

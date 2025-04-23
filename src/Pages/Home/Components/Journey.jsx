@@ -11,7 +11,7 @@ const Journey = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("/public/Data/journeyData.json");
+        const res = await axios.get("/Data/journeyData.json");
         setSections(res.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -25,7 +25,7 @@ const Journey = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute z-10 -left-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="hidden lg:block absolute z-10 -left-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
         onClick={onClick}
       >
         <FaArrowLeft size={20} />
@@ -37,7 +37,7 @@ const Journey = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute -right-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="hidden lg:block absolute -right-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
         onClick={onClick}
       >
         <FaArrowRight size={20} />
@@ -88,27 +88,36 @@ const Journey = () => {
 
       {/* React Slick Slider */}
       <Slider {...settings}>
-        {sections.map((item) => (
-          <div key={item.id} className="px-4">
-            <div
-              className="bg-white shadow border border-gray-100 rounded-lg
+        {sections.length === 0 ? (
+          <div className="text-center text-gray-500 col-span-full">
+            No Journey works available.
+          </div>
+        ) : (
+          sections.map((item) => (
+            <div key={item.id} className="px-4">
+              <div
+                className="bg-white shadow border border-gray-100 rounded-lg
             "
-            >
-              <img
-                src={item.image}
-                alt={item.heading}
-                className="w-full h-64 object-cover rounded-t-md  mb-4"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-zinc-800">
-                  {item.heading}
-                </h3>
-                <p className="text-zinc-600 italic">{item.subheading}</p>
-                <p className="mt-2 text-sm text-zinc-500">{item.details}</p>
+              >
+                <img
+                  src={item.image}
+                  alt={item.heading}
+                  className="w-full h-64 object-cover rounded-t-md  mb-4"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-zinc-800">
+                    {item.heading}
+                  </h3>
+                  <p className="text-zinc-600 italic">{item.subheading}</p>
+                  <p className="mt-2 text-sm text-zinc-500">
+                    {item.details.slice(0, 80)}
+                    {item.details.length > 80 && "..."}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </Slider>
     </div>
   );

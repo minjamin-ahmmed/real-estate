@@ -41,18 +41,24 @@ const Featuredwork = () => {
       </div>
 
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-5 space-y-5">
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 break-inside-avoid"
-          >
-            <img
-              src={img}
-              alt={`Featured work ${index + 1}`}
-              className="w-full object-cover hover:scale-105 transition-transform duration-300"
-            />
+        {images.length === 0 ? (
+          <div className="text-center text-gray-500 col-span-full">
+            No featured works available.
           </div>
-        ))}
+        ) : (
+          images.map((img, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 break-inside-avoid"
+            >
+              <img
+                src={img}
+                alt={`Featured work ${index + 1}`}
+                className="w-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          ))
+        )}
       </div>
     </div>
   );

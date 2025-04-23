@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "/src/assets/featured-1.jpg",
+    "img": "/images/featured-1.jpg",
     "holding_name": "Lake Vista Residency",
     "location": "Banani, Dhaka",
     "position": "Beside Lake",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "img": "/src/assets/featured-2.jpg",
+    "img": "/images/featured-2.jpg",
     "holding_name": "Green Oasis Heights",
     "location": "Gulshan 2, Dhaka",
     "position": "Adjacent to Park and Lake",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "img": "/src/assets/featured-3.jpg",
+    "img": "/images/featured-3.jpg",
     "holding_name": "Sunset Tower",
     "location": "Baridhara DOHS, Dhaka",
     "position": "Corner Plot with Lake View",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "img": "/src/assets/featured-4.jpg",
+    "img": "/images/featured-4.jpg",
     "holding_name": "Riverstone Residence",
     "location": "Bashundhara R/A, Dhaka",
     "position": "Facing River",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "img": "/src/assets/featured-5.jpg",
+    "img": "/images/featured-5.jpg",
     "holding_name": "Urban Nest",
     "location": "Dhanmondi, Dhaka",
     "position": "Lake-adjacent",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "img": "/src/assets/featured-6.jpg",
+    "img": "/images/featured-6.jpg",
     "holding_name": "SkyGarden Apartments",
     "location": "Uttara Sector 11, Dhaka",
     "position": "Park View",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "img": "/src/assets/featured-7.jpg",
+    "img": "/images/featured-7.jpg",
     "holding_name": "The Terrace",
     "location": "Mohakhali DOHS, Dhaka",
     "position": "Overlooking Green Zone",
@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "img": "/src/assets/featured-8.jpg",
+    "img": "/images/featured-8.jpg",
     "holding_name": "Elm Residence",
     "location": "Niketan, Dhaka",
     "position": "Near Gulshan Lake",
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "img": "/src/assets/featured-9.jpeg",
+    "img": "/images/featured-9.jpeg",
     "holding_name": "Palm View Heights",
     "location": "Mirpur DOHS, Dhaka",
     "position": "Beside Community Park",
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "img": "/src/assets/featured-10.jpg",
+    "img": "/images/featured-10.jpg",
     "holding_name": "Zen Garden Living",
     "location": "Shyamoli, Dhaka",
     "position": "Backside Lake View",
@@ -101,7 +101,7 @@
   },
   {
     "id": 11,
-    "img": "/src/assets/featured-4.jpg",
+    "img": "/images/featured-4.jpg",
     "holding_name": "Riverstone Residence",
     "location": "Bashundhara R/A, Dhaka",
     "position": "Facing River",
@@ -111,7 +111,7 @@
   },
   {
     "id": 12,
-    "img": "/src/assets/featured-5.jpg",
+    "img": "/images/featured-5.jpg",
     "holding_name": "Urban Nest",
     "location": "Dhanmondi, Dhaka",
     "position": "Lake-adjacent",

@@ -12,6 +12,8 @@ const Banner = () => {
   const images = [bannerImg, bannerImg2, bannerImg3, bannerImg4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const icons = [icon1, icon2, icon3];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -24,7 +26,7 @@ const Banner = () => {
 
   return (
     <div
-      className="relative bg-cover bg-center mt-24 flex flex-col justify-center items-center text-white text-center py-56 transition-all duration-1000 ease-in-out"
+      className="relative bg-cover bg-center mt-24 flex flex-col justify-center items-center text-white text-center py-64 transition-all duration-1000 ease-in-out"
       style={{
         backgroundImage: `url(${images[currentIndex]})`,
       }}
@@ -45,22 +47,28 @@ const Banner = () => {
 
       <div className="lg:absolute lg:-bottom-28">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {[icon1, icon2, icon3].map((icon, idx) => (
-            <div
-              key={idx}
-              className="bg-white border border-white/30 text-white rounded-lg shadow p-4 space-y-4"
-            >
-              <div className="flex items-center justify-center">
-                <img className="w-32 h-32 object-contain" src={icon} alt="" />
-              </div>
-              <p className="text-2xl font-semibold text-zinc-600 text-center">
-                From Dirt to Dream
-              </p>
-              <p className="text-center text-zinc-700">
-                Realize the True Worth of Your Land.
-              </p>
+          {icons.length === 0 ? (
+            <div className="text-center text-gray-500 col-span-full">
+              No icon available.
             </div>
-          ))}
+          ) : (
+            icons.map((icon, idx) => (
+              <div
+                key={idx}
+                className="bg-white border border-white/30 text-white rounded-lg shadow p-4 space-y-4"
+              >
+                <div className="flex items-center justify-center">
+                  <img className="w-32 h-32 object-contain" src={icon} alt="" />
+                </div>
+                <p className="text-2xl font-semibold text-zinc-600 text-center">
+                  From Dirt to Dream
+                </p>
+                <p className="text-center text-zinc-700">
+                  Realize the True Worth of Your Land.
+                </p>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>

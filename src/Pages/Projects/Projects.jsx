@@ -33,45 +33,52 @@ const Projects = () => {
       </div>
 
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-5 space-y-5">
-        {sections.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden break-inside-avoid relative"
-          >
-            <Link to={`/projects/${project.id}`}>
-              <div>
-                <img
-                  src={project.img}
-                  alt={project.holding_name}
-                  className="w-full object-cover"
-                />
-              </div>
-            </Link>
-            <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 text-sm rounded-full shadow">
-              {project.position}
-            </span>
-            <div className="p-4 space-y-2">
+        {sections.length === 0 ? (
+          <div className="text-center text-gray-500 col-span-full">
+            No Projects works available.
+          </div>
+        ) : (
+          sections.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden break-inside-avoid relative"
+            >
               <Link to={`/projects/${project.id}`}>
-                <h3 className="text-xl font-semibold text-zinc-700 hover:text-zinc-900">
-                  {project.holding_name}
-                </h3>
+                <div>
+                  <img
+                    src={project.img}
+                    alt={project.holding_name}
+                    className="w-full object-cover"
+                  />
+                </div>
               </Link>
-              <p className="text-sm text-zinc-500">{project.description}</p>
-              <div className="mt-2 space-y-1 text-zinc-500 text-sm">
-                <p className="flex items-center gap-2">
-                  <FaMapMarkerAlt className="text-red-500" /> {project.location}
-                </p>
-                <p className="flex items-center gap-2">
-                  <FaWater className="text-blue-500" /> {project.position}
-                </p>
-                <p className="flex items-center gap-2">
-                  <FaRulerCombined className="text-green-500" /> {project.sqft}{" "}
-                  sqft
-                </p>
+              <span className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 text-sm rounded-full shadow">
+                {project.position}
+              </span>
+              <div className="p-4 space-y-2">
+                <Link to={`/projects/${project.id}`}>
+                  <h3 className="text-xl font-semibold text-zinc-700 hover:text-zinc-900">
+                    {project.holding_name}
+                  </h3>
+                </Link>
+                <p className="text-sm text-zinc-500">{project.description}</p>
+                <div className="mt-2 space-y-1 text-zinc-500 text-sm">
+                  <p className="flex items-center gap-2">
+                    <FaMapMarkerAlt className="text-red-500" />{" "}
+                    {project.location}
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <FaWater className="text-blue-500" /> {project.position}
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <FaRulerCombined className="text-green-500" />{" "}
+                    {project.sqft} sqft
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );

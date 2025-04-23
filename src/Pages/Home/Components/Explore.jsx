@@ -11,7 +11,7 @@ const Explore = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("/public/Data/videoData.json");
+        const res = await axios.get("/Data/videoData.json");
         setSections(res.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -25,7 +25,7 @@ const Explore = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute z-10 -left-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="hidden lg:block absolute z-10 -left-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
         onClick={onClick}
       >
         <FaArrowLeft size={20} />
@@ -37,7 +37,7 @@ const Explore = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute -right-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="hidden lg:block absolute -right-8 top-1/2 transform -translate-y-1/2 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
         onClick={onClick}
       >
         <FaArrowRight size={20} />
@@ -86,24 +86,29 @@ const Explore = () => {
         </p>
       </div>
 
-      {/* React Slick Slider */}
       <Slider {...settings}>
-        {sections.map((item, index) => (
-          <div key={index} className="px-4">
-            <div className="bg-white shadow border border-gray-100 rounded-lg h-[500px] flex items-center justify-center overflow-hidden">
-              <video
-                className="rounded-lg object-cover w-full h-full"
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source src={item.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+        {sections.length === 0 ? (
+          <div className="text-center text-gray-500 col-span-full">
+            No Explore Card to show.
           </div>
-        ))}
+        ) : (
+          sections.map((item, index) => (
+            <div key={index} className="px-4">
+              <div className="bg-white shadow border border-gray-100 rounded-lg h-[500px] flex items-center justify-center overflow-hidden">
+                <video
+                  className="rounded-lg object-cover w-full h-full"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src={item.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          ))
+        )}
       </Slider>
     </div>
   );
